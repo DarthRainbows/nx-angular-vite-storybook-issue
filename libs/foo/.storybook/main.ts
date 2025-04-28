@@ -1,4 +1,4 @@
-import { StorybookConfig } from '@analogjs/storybook-angular';
+import type { StorybookConfig } from '@analogjs/storybook-angular';
 
 const config: StorybookConfig = {
   stories: ['../**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
