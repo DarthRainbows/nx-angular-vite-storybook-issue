@@ -36,6 +36,9 @@ importers:
         specifier: ~0.15.0
         version: 0.15.0
     devDependencies:
+      '@analogjs/storybook-angular':
+        specifier: 1.16.0-beta.7
+        version: 1.16.0-beta.7(d239584282127de949bd016574a35a60)
       '@analogjs/vite-plugin-angular':
         specifier: ~1.14.1
         version: 1.14.1(49e000735f8a9c23172108e31f68c33b)
@@ -189,6 +192,36 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@analogjs/storybook-angular@1.16.0-beta.7':
+    resolution: {integrity: sha512-2KdO9mQERdFGMJRXGsikl5M7zJ8eP3TyUHfuC4oQXsW5YWo6+3gz2A96Ta+dtFKwQyU8TVNqDuTZFxn1wNxX8w==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@analogjs/vite-plugin-angular': '>=1.12.0 < 2.0.0'
+      '@angular-devkit/architect': '>=0.1500.0 < 0.2000.0'
+      '@angular-devkit/build-angular': '>=15.0.0 < 20.0.0'
+      '@angular-devkit/core': '>=15.0.0 < 20.0.0'
+      '@angular/animations': '>=15.0.0 < 20.0.0'
+      '@angular/cli': '>=15.0.0 < 20.0.0'
+      '@angular/common': '>=15.0.0 < 20.0.0'
+      '@angular/compiler': '>=15.0.0 < 20.0.0'
+      '@angular/compiler-cli': '>=15.0.0 < 20.0.0'
+      '@angular/core': '>=15.0.0 < 20.0.0'
+      '@angular/forms': '>=15.0.0 < 20.0.0'
+      '@angular/platform-browser': '>=15.0.0 < 20.0.0'
+      '@angular/platform-browser-dynamic': '>=15.0.0 < 20.0.0'
+      rxjs: ^6.0.0 || ^7.4.0
+      storybook: '>=8.6.0'
+      typescript: ^5.0.0
+      vite: '*'
+      zone.js: '>= 0.11.1 < 1.0.0'
+    peerDependenciesMeta:
+      '@angular/animations':
+        optional: true
+      '@angular/cli':
+        optional: true
+      zone.js:
+        optional: true
 
   '@analogjs/vite-plugin-angular@1.14.1':
     resolution: {integrity: sha512-nCoRQpLu5t8DtBoN+lNbWAJ3p6X4TnKJZQqOh0ZmcADeHf07vEOq6HiGcEi461SedKawQVAu9SZmRTsNeDfz6A==}
@@ -7599,6 +7632,46 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@analogjs/storybook-angular@1.16.0-beta.7(d239584282127de949bd016574a35a60)':
+    dependencies:
+      '@analogjs/vite-plugin-angular': 1.14.1(49e000735f8a9c23172108e31f68c33b)
+      '@angular-devkit/architect': 0.1902.9(chokidar@4.0.3)
+      '@angular-devkit/build-angular': 19.2.9(@angular/compiler-cli@19.2.8(@angular/compiler@19.2.8)(typescript@5.7.3))(@angular/compiler@19.2.8)(@rspack/core@1.3.6(@swc/helpers@0.5.17))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@types/node@18.16.9)(chokidar@4.0.3)(html-webpack-plugin@5.6.3(@rspack/core@1.3.6(@swc/helpers@0.5.17))(webpack@5.99.6(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.3)))(jiti@2.4.2)(ng-packagr@19.2.2(@angular/compiler-cli@19.2.8(@angular/compiler@19.2.8)(typescript@5.7.3))(tslib@2.8.1)(typescript@5.7.3))(sass-embedded@1.87.0)(stylus@0.64.0)(typescript@5.7.3)(vite@6.3.3(@types/node@18.16.9)(jiti@2.4.2)(less@4.1.3)(sass-embedded@1.87.0)(sass@1.87.0)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))(yaml@2.7.1)
+      '@angular-devkit/core': 19.2.9(chokidar@4.0.3)
+      '@angular/common': 19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2)
+      '@angular/compiler': 19.2.8
+      '@angular/compiler-cli': 19.2.8(@angular/compiler@19.2.8)(typescript@5.7.3)
+      '@angular/core': 19.2.8(rxjs@7.8.2)(zone.js@0.15.0)
+      '@angular/forms': 19.2.8(@angular/common@19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@19.2.8(@angular/common@19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0)))(rxjs@7.8.2)
+      '@angular/platform-browser': 19.2.8(@angular/common@19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))
+      '@angular/platform-browser-dynamic': 19.2.8(@angular/common@19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/compiler@19.2.8)(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(@angular/platform-browser@19.2.8(@angular/common@19.2.8(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0))(rxjs@7.8.2))(@angular/core@19.2.8(rxjs@7.8.2)(zone.js@0.15.0)))
+      '@storybook/angular': 8.6.12(e84c32f84435a0f65c8d3b383993439a)
+      '@storybook/builder-vite': 8.6.12(storybook@8.6.12(prettier@2.8.8))(vite@6.3.3(@types/node@18.16.9)(jiti@2.4.2)(less@4.1.3)(sass-embedded@1.87.0)(sass@1.87.0)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1))
+      '@storybook/components': 8.6.12(storybook@8.6.12(prettier@2.8.8))
+      '@storybook/global': 5.0.0
+      '@storybook/manager-api': 8.6.12(storybook@8.6.12(prettier@2.8.8))
+      '@storybook/preview-api': 8.6.12(storybook@8.6.12(prettier@2.8.8))
+      '@storybook/theming': 8.6.12(storybook@8.6.12(prettier@2.8.8))
+      fd-package-json: 1.2.0
+      find-up: 5.0.0
+      rxjs: 7.8.2
+      semver: 7.7.1
+      storybook: 8.6.12(prettier@2.8.8)
+      telejson: 7.2.0
+      ts-dedent: 2.2.0
+      typescript: 5.7.3
+      util-deprecate: 1.0.2
+      vite: 6.3.3(@types/node@18.16.9)(jiti@2.4.2)(less@4.1.3)(sass-embedded@1.87.0)(sass@1.87.0)(stylus@0.64.0)(terser@5.39.0)(yaml@2.7.1)
+    optionalDependencies:
+      '@angular/cli': 19.2.9(@types/node@18.16.9)(chokidar@4.0.3)
+      zone.js: 0.15.0
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+      - webpack-cli
 
   '@analogjs/vite-plugin-angular@1.14.1(49e000735f8a9c23172108e31f68c33b)':
     dependencies:

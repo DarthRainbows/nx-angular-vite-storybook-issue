@@ -33,11 +33,10 @@
       "executor": "@nx/eslint:lint"
     },
     "storybook": {
-      "executor": "@storybook/angular:start-storybook",
+      "executor": "@analogjs/storybook-angular:start-storybook",
       "options": {
         "port": 4400,
         "configDir": "libs/foo/.storybook",
-        "browserTarget": "foo:build-storybook",
         "compodoc": false
       },
       "configurations": {
@@ -47,12 +46,11 @@
       }
     },
     "build-storybook": {
-      "executor": "@storybook/angular:build-storybook",
+      "executor": "@analogjs/storybook-angular:build-storybook",
       "outputs": ["{options.outputDir}"],
       "options": {
         "outputDir": "dist/storybook/foo",
         "configDir": "libs/foo/.storybook",
-        "browserTarget": "foo:build-storybook",
         "compodoc": false
       },
       "configurations": {
